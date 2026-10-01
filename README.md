@@ -33,3 +33,18 @@ JSON report in `recordings/`, with synchronized music. The website uses a
 VP9/Opus WebM copy. Rendering is scaled by two to 640 × 400 pixels.
 
 Original production: [Demozoo](https://demozoo.org/productions/79463/).
+
+## Android
+
+```sh
+./scripts/run-android.sh --build-only
+./scripts/run-android.sh
+```
+
+The build uses Java 17, Android SDK 36, NDK 28.2, Ebitengine 2.9.11 and the
+included Gradle wrapper. It produces an ARM64 APK in
+`android/app/build/outputs/apk/debug/app-debug.apk`. The host initializes Go
+rendering and audio after the Android context is available, preserves landscape
+orientation and keeps the screen awake. Android Back closes the activity.
+The install command requires one authorized USB device; `ANDROID_SERIAL`
+can select a specific device. Build products and machine settings stay local.
