@@ -5,6 +5,27 @@ A Go/Ebitengine conversion of **DMA Intro 4**, an Atari ST intro by
 screen combines two illustrated characters, sparkles and a large repeated
 scrolltext produced through palette changes.
 
+<!-- Project showcase -->
+## Screenshots
+
+[![Two illustrated characters and sparkles in front of the repeated palette scroller](docs/media/screenshot-1.png)](docs/media/screenshot-1.png)
+
+Two illustrated characters and sparkles in front of the repeated palette scroller.
+
+## Video
+
+[![Animated preview of Larcociel 4 Go](docs/media/preview.gif)](https://github.com/olivierh59500/go-larcociel4/raw/refs/heads/main/docs/media/preview.mp4)
+
+**[Watch or download the 24-second MP4 preview with sound](https://github.com/olivierh59500/go-larcociel4/raw/refs/heads/main/docs/media/preview.mp4)**
+
+This preview is captured from the Go production.
+
+The animated image is silent; the MP4 includes the soundtrack.
+
+<!-- End project showcase -->
+
+## Production notes
+
 ```sh
 go run ./cmd/larcociel4
 go run ./cmd/larcociel4 -mute
